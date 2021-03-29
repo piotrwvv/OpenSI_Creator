@@ -1,7 +1,7 @@
 ## Ignore Visual Studio build results, user files and temporary files.
 
 # Build results
-build/
+.output/
 
 # User-specific files
 *.user
