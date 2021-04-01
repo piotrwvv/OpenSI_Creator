@@ -155,19 +155,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\basic_gui_facade\basic_gui_facade.vcxproj">
-      <Project>{0d748abd-de17-4ef7-b0f9-d3af35b8abcb}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\basic_gui_winapi\basic_gui_winapi.vcxproj">
-      <Project>{1c33f70b-8070-4f51-80eb-edef72df4039}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="window\Simple_Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="flexible_gui.h" />
     <ClInclude Include="window\Simple_Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\basic_gui_factory\basic_gui_factory.vcxproj">
+      <Project>{7058835d-c2a5-4ce7-9c5d-7fe34714618d}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

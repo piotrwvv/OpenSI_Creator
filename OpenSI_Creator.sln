@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "basic_gui_facade", "source\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "flexible_gui", "source\user_interface\flexible_gui\flexible_gui.vcxproj", "{856D09D6-4A28-4A35-A5FE-AAE472450E9C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "basic_gui_factory", "source\user_interface\basic_gui_factory\basic_gui_factory.vcxproj", "{7058835D-C2A5-4CE7-9C5D-7FE34714618D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -55,6 +57,14 @@ Global
 		{856D09D6-4A28-4A35-A5FE-AAE472450E9C}.Release|x64.Build.0 = Release|x64
 		{856D09D6-4A28-4A35-A5FE-AAE472450E9C}.Release|x86.ActiveCfg = Release|Win32
 		{856D09D6-4A28-4A35-A5FE-AAE472450E9C}.Release|x86.Build.0 = Release|Win32
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Debug|x64.ActiveCfg = Debug|x64
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Debug|x64.Build.0 = Debug|x64
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Debug|x86.ActiveCfg = Debug|Win32
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Debug|x86.Build.0 = Debug|Win32
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Release|x64.ActiveCfg = Release|x64
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Release|x64.Build.0 = Release|x64
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Release|x86.ActiveCfg = Release|Win32
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +74,7 @@ Global
 		{1C33F70B-8070-4F51-80EB-EDEF72DF4039} = {26BA1533-7C09-43B5-8040-C0FAF097BBB4}
 		{0D748ABD-DE17-4EF7-B0F9-D3AF35B8ABCB} = {26BA1533-7C09-43B5-8040-C0FAF097BBB4}
 		{856D09D6-4A28-4A35-A5FE-AAE472450E9C} = {26BA1533-7C09-43B5-8040-C0FAF097BBB4}
+		{7058835D-C2A5-4CE7-9C5D-7FE34714618D} = {26BA1533-7C09-43B5-8040-C0FAF097BBB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1089AF0-06E0-4F97-A4BC-02F8A2F50242}

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1c33f70b-8070-4f51-80eb-edef72df4039}</ProjectGuid>
-    <RootNamespace>basicguiwinapi</RootNamespace>
+    <ProjectGuid>{7058835d-c2a5-4ce7-9c5d-7fe34714618d}</ProjectGuid>
+    <RootNamespace>basicguifactory</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -98,8 +98,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,8 +114,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,8 +130,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,8 +146,6 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -163,15 +155,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="window\Window.cpp" />
+    <ClInclude Include="basic_gui_factory.h" />
+    <ClInclude Include="window\Window_Factory.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="basic_gui_winapi.h" />
-    <ClInclude Include="window\Window.h" />
+    <ClCompile Include="window\Window_Factory.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\basic_gui_facade\basic_gui_facade.vcxproj">
-      <Project>{0d748abd-de17-4ef7-b0f9-d3af35b8abcb}</Project>
+    <ProjectReference Include="..\basic_gui_winapi\basic_gui_winapi.vcxproj">
+      <Project>{1c33f70b-8070-4f51-80eb-edef72df4039}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
