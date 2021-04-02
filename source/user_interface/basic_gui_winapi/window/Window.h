@@ -1,13 +1,13 @@
 //
 #pragma once
 
-#include "../../basic_gui_facade/window/Window_I.h"
+#include "../../basic_gui_interface/window/Window_I.h"
 
-typedef struct HWND__*			HWND;
-typedef __int64					LRESULT;
-typedef unsigned int			UINT;
-typedef unsigned __int64		WPARAM;
-typedef __int64					LPARAM;
+using HWND = struct HWND__*;
+using LRESULT = __int64;
+using UINT = unsigned int;
+using WPARAM = unsigned __int64;
+using LPARAM = __int64;
 
 namespace basic_gui {
 
@@ -21,12 +21,14 @@ namespace basic_gui {
 		Window& operator= (Window&&) = delete;					//move assignment
 		void position_size(short x, short y, short w, short h);
 	private:
-		bool register_wnd_class();
-		bool create_window();
-		bool destroy_window();
-		static bool registered;
-		HWND hwnd {nullptr};
+		//free function?
+		bool register_wnd_class() const noexcept;
+		bool create_window() noexcept;
+		bool destroy_window() const noexcept;
+		//free function?
 		static LRESULT __stdcall window_procedure(HWND hwnd, UINT msg, WPARAM wpar, LPARAM lpar);
+	private:
+		HWND hwnd {nullptr};									//WinAPI window handler
 	};
 }
 //

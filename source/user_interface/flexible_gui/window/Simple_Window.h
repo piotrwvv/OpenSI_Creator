@@ -11,6 +11,7 @@ namespace flexible_gui {
 		~Simple_Window();
 		void position_size(short x, short y, short w, short h);
 	private:
+		//unique_ptr ?
 		basic_gui::Window_I* wnd {nullptr};
 	};
 }

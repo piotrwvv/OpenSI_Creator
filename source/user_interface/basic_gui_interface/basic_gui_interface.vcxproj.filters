@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="basic_gui_facade.h">
+    <ClInclude Include="basic_gui_interface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="window\Window_I.h">

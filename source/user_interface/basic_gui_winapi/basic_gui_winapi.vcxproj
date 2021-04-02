@@ -170,8 +170,8 @@
     <ClInclude Include="window\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\basic_gui_facade\basic_gui_facade.vcxproj">
-      <Project>{0d748abd-de17-4ef7-b0f9-d3af35b8abcb}</Project>
+    <ProjectReference Include="..\basic_gui_interface\basic_gui_interface.vcxproj">
+      <Project>{f2a2fa0a-3b39-43b1-a5c4-ecc3b0a226dc}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

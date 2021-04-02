@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0d748abd-de17-4ef7-b0f9-d3af35b8abcb}</ProjectGuid>
-    <RootNamespace>basicguifacade</RootNamespace>
+    <ProjectGuid>{f2a2fa0a-3b39-43b1-a5c4-ecc3b0a226dc}</ProjectGuid>
+    <RootNamespace>basicguiinterface</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -155,7 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="basic_gui_facade.h" />
+    <ClInclude Include="basic_gui_interface.h" />
     <ClInclude Include="window\Window_I.h" />
   </ItemGroup>
   <ItemGroup>

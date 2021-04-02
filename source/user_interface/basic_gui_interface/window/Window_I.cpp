@@ -6,12 +6,12 @@
 using namespace basic_gui;
 
 Window_I::Window_I() {
-	std::cout << "constructor basic_gui::Window_I\n";
+	std::cout << "Ctor basic_gui::Window_I\n";
 	return;
 }
 
 Window_I::~Window_I() {
-	std::cout << "destructor basic_gui::~Window_I\n";
+	std::cout << "Dtor basic_gui::~Window_I\n";
 	return;
 }
 //

@@ -8,18 +8,16 @@
 
 using namespace basic_gui;
 
-bool Window::registered {false};
-
 Window::Window() {
-	std::cout << "constructor basic_gui::Window\n";
-	if (register_wnd_class() == 1) std::cout << "ERROR: register_wnd_class()\n";
-	if (create_window() == 1) std::cout << "ERROR: create_window()\n";
+	std::cout << "Ctor basic_gui::Window\n";
+	if (register_wnd_class() == 1) std::cerr << "ERROR: register_wnd_class()\n";
+	if (create_window() == 1) std::cerr << "ERROR: create_window()\n";
 	return;
 }
 
 Window::~Window() {
-	std::cout << "destructor basic_gui::~Window\n";
-	if (destroy_window() == 1) std::cout << "ERROR: destroy_window()\n";
+	std::cout << "Dtor basic_gui::~Window\n";
+	if (destroy_window() == 1) std::cerr << "ERROR: destroy_window()\n";
 	return;
 }
 
@@ -29,8 +27,9 @@ void Window::position_size(short x, short y, short w, short h) {
 	return;
 }
 
-bool Window::register_wnd_class() {
-	if (registered == true) return 0;
+bool Window::register_wnd_class() const noexcept {
+	static bool registered {false};								//WinAPI window class single registration state
+	if (registered) return 0;
 
 	HINSTANCE app {GetModuleHandle(nullptr)};					//file (exe) used to create the calling process
 	if (app == nullptr) return 1;
@@ -62,7 +61,7 @@ bool Window::register_wnd_class() {
 	return 0;
 }
 
-bool Window::create_window() {
+bool Window::create_window() noexcept {
 	HINSTANCE app {GetModuleHandle(nullptr)};					//file (exe) used to create the calling process
 	if (app == nullptr) return 1;
 
@@ -82,7 +81,7 @@ bool Window::create_window() {
 	return 0;
 }
 
-bool Window::destroy_window() {
+bool Window::destroy_window() const noexcept {
 	if (hwnd == nullptr) return 0;
 	if (DestroyWindow(hwnd) == 0) return 1;
 	return 0;
